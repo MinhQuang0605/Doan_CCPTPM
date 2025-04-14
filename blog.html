@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QNT - Trang chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .custom-section {
+            min-height: 50vh!important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand fw-bold" href="#">QNT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="help.html">Hỗ trợ</a></li>
+            </ul>
+            <div class="d-flex">
+                <a class="nav-link text-white me-3 mt-1" href="login.html">Đăng nhập</a>
+                <a class="btn btn-light fw-bold" href="chat.html">Mở QNT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <section class="custom-section container-fluid d-flex flex-column align-items-center">
+        <div class="section-text text-center">
+            <h1 class="fw-bold mb-4" style="font-size: 7rem;">
+                BLOG QNT
+            </h1>
+            <!-- Thêm khung tìm kiếm -->
+            <div class="search-container mb-4">
+                <div class="input-group" style="max-width: 1000px; margin: 0 auto;">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm bài viết..." aria-label="Search">
+                    <button class="btn btn-dark" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Thêm vào sau div.search-container -->
+    <div class="blog-container container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <!-- Blog post 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/blog1.png" class="card-img-top" alt="Blog 1" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cập nhật mới: Tính năng chia sẻ màn hình</h5>
+                        <p class="card-text">QNT vừa ra mắt tính năng chia sẻ màn hình mới, cho phép người dùng dễ dàng chia sẻ nội dung trong cuộc trò chuyện video...</p>
+                        <a href="#" class="btn btn-dark">Đọc thêm</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Đăng 2 ngày trước
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog post 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/blog2.png" class="card-img-top" alt="Blog 2" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Hướng dẫn tạo server cho người mới</h5>
+                        <p class="card-text">Bài viết chi tiết hướng dẫn cách tạo và quản lý server QNT cho người mới bắt đầu. Từ thiết lập kênh đến phân quyền...</p>
+                        <a href="#" class="btn btn-dark">Đọc thêm</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Đăng 1 tuần trước
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog post 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/blog3.png" class="card-img-top" alt="Blog 3" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Top 10 bot hay nhất cho server QNT</h5>
+                        <p class="card-text">Khám phá những bot hữu ích nhất có thể giúp server của bạn trở nên thú vị và dễ quản lý hơn...</p>
+                        <a href="#" class="btn btn-dark">Đọc thêm</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Đăng 2 tuần trước
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        © 2025 QNT. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
