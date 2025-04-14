@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giao diện Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #1e1f22;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- Sidebar trái -->
+        <div class="sidebar d-flex flex-column align-items-center py-3">
+            <div class="server-item">
+                <a href="chat.html">
+                    <img src="assets/img/user1.jpg" class="profile-img align-items-center">
+                </a>
+            </div>
+            <div class="server-item">
+                <img src="assets/img/user3.jpg" class="profile-img align-items-center" />
+            </div>
+            <div class="server-item">
+                <a href="chatServer.html">
+                    <img src="assets/img/user4.jpg" class="profile-img align-items-center">
+                </a>
+            </div>
+            <div class="server-item">
+                <img src="assets/img/user2.jpg" class="profile-img align-items-center" />
+            </div>
+
+            <div class="server-item"><i class="bi bi-compass-fill"></i></div>
+            <div class="server-item"><i class="bi bi-download"></i></div>
+            <div class="server-item">+</div>
+        </div>
+
+        <!-- Danh sách bạn bè -->
+        <div class="left-panel">
+            <!-- Search bar with icon -->
+            <div class="search-wrapper mb-3">
+                <i class="bi bi-search position-absolute ps-2 text-muted" style="line-height: 35px;"></i>
+                <input class="search-bar ps-4" placeholder="Tìm kiếm bạn bè...">
+            </div>
+
+            <!-- Navigation links -->
+            <div class="nav-links mb-3">
+                <a class="nav-link d-flex align-items-center mb-1" href="#">
+                    <i class="bi bi-person-raised-hand me-2"></i>
+                    <span>Bạn bè</span>
+                    <span class="ms-auto badge bg-success rounded-pill">3</span>
+                </a>
+                <a class="nav-link d-flex align-items-center" href="help.html">
+                    <i class="bi bi-headset me-2"></i>
+                    <span>Hỗ trợ</span>
+                </a>
+            </div>
+
+            <div class="dropdown-divider"></div>
+
+            <!-- Direct Messages header -->
+            <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="text-white-50 text-uppercase" style="font-size: 12px;">Tin nhắn trực tiếp</span>
+                <i class="bi bi-plus-lg text-muted" style="cursor: pointer; color: aliceblue!important;"></i>
+            </div>
+            <div class="contact-item text-white">
+                <img src="assets/img/user1.jpg" class="profile-img me-2" />
+                <span class="status-dot status-online"></span> Võ Minh Tài
+            </div>
+            <div class="contact-item text-white">
+                <img src="assets/img/user2.jpg" class="profile-img me-2" />
+                <span class="status-dot status-busy"></span> Trần Uy Nghĩa
+            </div>
+            <div class="contact-item text-white">
+                <img src="assets/img/user3.jpg" class="profile-img me-2" />
+                <span class="status-dot status-offline"></span> Dương Lê Minh Quang
+            </div>
+
+        </div>
+
+        <!-- Main chat area with adjusted width -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <div>Võ Minh Tài</div>
+                <div>
+                    <a href="phone.html">
+                        <button class="btn btn-sm btn-dark text-white me-1">📞</button>
+                    </a>
+                    <button class="btn btn-sm btn-dark text-white me-1">🎥</button>
+                    <button class="btn btn-sm btn-dark text-white me-1">👥</button>
+                    <input class="search-bar" placeholder="Tìm kiếm">
+                </div>
+            </div>
+            <div class="chat-body p-3">
+                <!-- Tin nhắn sẽ hiển thị ở đây -->
+                <p><strong>Võ Minh Tài:</strong> Xin chào bạn!</p>
+            </div>
+            <div class="chat-footer d-flex align-items-center p-3">
+                <div class="input-group">
+                    <input type="text" class="form-control chat-input" placeholder="Nhập tin nhắn...">
+                    <button class="btn btn-dark">
+                        <i class="bi bi-image"></i>
+                    </button>
+                    <button class="btn btn-dark">
+                        <i class="bi bi-filetype-gif"></i>
+                    </button>
+                    <button class="btn btn-dark">
+                        <i class="bi bi-emoji-smile-fill"></i>
+                    </button>
+                    <button class="btn btn-dark">
+                        <i class="bi bi-send-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right profile sidebar -->
+        <div class="profile-sidebar text-white p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="assets/img/user1.jpg" class="profile-img me-2" />
+                <div>
+                    <div class="fw-bold">Võ Minh Tài</div>
+                    <small>Gay lòđ_1505</small>
+                </div>
+            </div>
+            <div class="bg-dark p-2 rounded">
+                <strong>Giới thiệu về tôi</strong><br /> Siêu gầy<br />
+                <small>Tham gia từ 01/04/2021</small>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
